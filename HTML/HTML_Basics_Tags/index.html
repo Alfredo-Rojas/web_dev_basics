@@ -60,12 +60,35 @@
     </ul>
 
     <form action="#">
-      <label for="username">Username</label>
-      <input type="text" name="username" placeholder="Enter username..." />
-      <label for="password">Password</label>
-      <input type="password" name="password" />
-      <button>Submit</button>
-      <textarea name="comments" id="" cols="30" rows="10">Comments</textarea>
+      <p>
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Enter username..." />
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" />
+      </p>
+
+      <p>
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="" cols="30" rows="10"></textarea>
+      </p>
+
+      <input type="radio" name="gender" value="Male" />Male<br />
+      <input type="radio" name="female" value="Female" />Female<br />
+      <input type="radio" name="n/a" value="N/A" />N/A<br />
+
+      <select name="days" id="days">
+        <option>Sunday</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+      </select>
+
+      <p><input type="submit" /></p>
     </form>
 
     <hr />
