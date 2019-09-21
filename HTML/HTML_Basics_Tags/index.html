@@ -9,7 +9,15 @@
   <body>
     <h1>My page Title</h1>
 
-    <h3>Welcome to my page</h3>
+    <ul>
+      <a href="#image"><li>Image</li></a>
+      <a href="#list"><li>List</li></a>
+      <a href="#form"><li>Form</li></a>
+      <a href="#table"><li>Table</li></a>
+      <a href="./links.html" target="new"><li>Articles Page</li></a>
+    </ul>
+
+    <h2>Welcome to my page</h2>
 
     <p>
       Lorem ipsum dolor sit amet, ut ius unum decore, pri eripuit alterum eu. Te
@@ -17,6 +25,9 @@
       aliquando cu usu, ex nec nisl tamquam docendi. Cum iudico nusquam in.
     </p>
 
+    <a href="./links.html#chapter5" target="new"
+      ><span>Go to Articles Chapter 5</span></a
+    >
     <p>
       An pro fuisset tacimates quaerendum, amet nostrum instructior no eos. Id
       sit enim utroque delectus. At eam illud novum. Mel ea tale persius, eam no
@@ -27,7 +38,7 @@
 
     <hr />
 
-    <h3>Images in HTML</h3>
+    <h3 id="image">Images in HTML</h3>
 
     <img
       src="./img/DarthVader.jpg"
@@ -37,7 +48,7 @@
     />
 
     <hr />
-    <h3>Soccer Clubs and Players</h3>
+    <h4 id="list">Soccer Clubs and Players</h4>
     <ul>
       <li>
         F.C Barcelona
@@ -59,7 +70,7 @@
       </li>
     </ul>
 
-    <form action="#">
+    <form action="#" id="form">
       <p>
         <label for="username">Username</label>
         <input type="text" name="username" placeholder="Enter username..." />
@@ -93,7 +104,7 @@
 
     <hr />
 
-    <table border="1px">
+    <table border="1px" id="table">
       <tr>
         <th>City Name</th>
         <th>Country</th>
