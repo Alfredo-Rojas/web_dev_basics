@@ -8,6 +8,7 @@
       content="This is a website to play with differents html tags!"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css">
     <title>HTML Basics</title>
   </head>
   <body>
@@ -111,22 +112,46 @@
 
     <hr />
 
-    <table border="1px" id="table">
-      <tr>
-        <th>City Name</th>
-        <th>Country</th>
-        <th>Language</th>
-      </tr>
+    <table>
+      <caption>
+        Courses Schedule
+      </caption>
+      <thead>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </thead>
 
-      <tr>
-        <td>La Habana</td>
-        <td>Cuba</td>
-        <td>Spanish</td>
-      </tr>
-
-      <td>Miami</td>
-      <td>USA</td>
-      <td>Spanish(hahaha)</td>
+      <tbody>
+        <tr>
+          <td rowspan="2">JavaScript</td>
+          <td>Python</td>
+          <td colspan="2">Php</td>
+          <!-- <td>Php</td> -->
+          <td>Swift</td>
+        </tr>
+        <tr>
+          <!-- <td>JavaScript</td> -->
+          <td colspan="2">CSS</td>
+          <!-- <td>CSS</td> -->
+          <td>HTML</td>
+          <td>Sass</td>
+        </tr>
+        <tr>
+          <td>AWS</td>
+          <td>Firebase</td>
+          <td>Heroku</td>
+          <td colspan="2">Netlify</td>
+          <!-- <td>Netlify</td> -->
+        </tr>
+        <tfoot>
+          <tr>
+            <td colspan="5">Code Challenges</td>
+          </tr>
+        </tfoot>
+      </tbody>
     </table>
   </body>
 </html>
