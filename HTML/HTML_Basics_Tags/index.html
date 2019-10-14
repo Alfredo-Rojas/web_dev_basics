@@ -79,35 +79,61 @@
     </ul>
 
     <form action="#" id="form">
-      <p>
-        <label for="username">Username</label>
-        <input type="text" name="username" placeholder="Enter username..." />
-      </p>
-      <p>
-        <label for="password">Password</label>
-        <input type="password" name="password" />
-      </p>
+      <fieldset>
+        <div>
+          <label>Username
+          <input type="text" name="username" placeholder="Enter username..." required/>
+          </label>
+        </div>
 
-      <p>
-        <label for="comments">Comments</label>
-        <textarea name="comments" id="" cols="30" rows="10"></textarea>
-      </p>
+        <div>
+          <label>DOB
+            <input type="date" required/>
+          </label>
+        </div>
 
+        <div>
+          <label>Email
+            <input type="email" required/>
+          </label>
+        </div>
+
+        <div>
+          <label>Password
+            <input type="password" name="password" id="password" required/>
+          </label>
+        </div>
+        <legend>Personal</legend>
+      </fieldset>
+      <div>
+        <fieldset>
+          <textarea name="comments" id="" cols="80" rows="10" required></textarea>
+          <legend>Comments</legend>
+        </fieldset>     
+      </div>
+
+      <fieldset>
       <input type="radio" name="gender" value="Male" />Male<br />
-      <input type="radio" name="female" value="Female" />Female<br />
-      <input type="radio" name="n/a" value="N/A" />N/A<br />
+      <input type="radio" name="gender" value="Female" />Female<br />
+      <input type="radio" name="gender" value="N/A" />N/A<br />
 
       <select name="days" id="days">
-        <option>Sunday</option>
-        <option>Monday</option>
-        <option>Tuesday</option>
-        <option>Wednesday</option>
-        <option>Thursday</option>
-        <option>Friday</option>
-        <option>Saturday</option>
+        <optgroup label="Weekdays">
+          <option>Monday</option>
+          <option>Tuesday</option>
+          <option>Wednesday</option>
+          <option>Thursday</option>
+          <option>Friday</option>
+        </optgroup>
+        <optgroup label="Weekend">
+          <option>Saturday</option>
+          <option>Sunday</option>
+        </optgroup>
       </select>
+      <legend>Optional</legend>
+      </fieldset>
 
-      <p><input type="submit" /></p>
+      <div><input type="submit" /></div>
     </form>
 
     <hr />
@@ -160,5 +186,11 @@
         </tfoot>
       </tbody>
     </table>
+
+    <script>
+      document.getElementById('password').addEventListener('keyup', e => {
+        console.log(e.target.value);
+      })
+    </script>
   </body>
 </html>
