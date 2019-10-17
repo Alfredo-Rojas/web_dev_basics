@@ -37,3 +37,43 @@
 // }
 
 // factorialize(5);
+
+//------------------------------------------//
+
+
+// 3) Check for palindromes
+
+// function palindrome(str) {
+//   let checkPalindrome = "";
+//   let reg = /[\W_]/g;
+//   let smallStr = str.toLowerCase().replace(reg, "");
+
+//   for (let i=smallStr.length -1; i>=0; i--) {
+//     checkPalindrome += smallStr[i];
+//   }
+//     if (checkPalindrome !== smallStr) return false;
+
+//   return true;
+// }
+
+// palindrome("racecar");
+
+//Easy way
+
+// function palindrome(str) {
+//   let reg = /[\W_]/g;
+
+//   let smallStr = str.toLowerCase().replace(reg, "");
+
+//   let reversed = smallStr.split("").reverse().join("");
+//   if(reversed === str) return true;
+
+//   return false;
+// }
+
+// palindrome("racecar");
+
+
+//-----------------------------------------//
+
+
