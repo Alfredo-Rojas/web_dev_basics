@@ -1,4 +1,4 @@
-// Reverse a String:
+// 1) Reverse a String:
 
 // function reverseString(str) {
 // let strArr = str.split("");
@@ -22,3 +22,18 @@
 //  return final;
 // }
 // console.log(reverseString("Hello")); //olleh
+
+//--------------------------------------------------------//
+
+
+// 2) Factorialize a Number(n!)
+
+// function factorialize(num) {
+//   let factorializedNumber = 1;
+//   for (let i=1; i<=num;i++) {
+//     factorializedNumber *= i;
+//   }
+//   return factorializedNumber;
+// }
+
+// factorialize(5);
