@@ -77,3 +77,24 @@
 //-----------------------------------------//
 
 
+// 4) Find Longest Word
+
+// function findLongestWord(str) {
+//Large    
+// let words = str.split(" ");
+// // console.log(words);
+// let longest = "";
+// for (let word of words) {
+//   if (word.length > longest.length) longest = word;
+// }
+// return longest.length;
+
+
+//Fancy
+// return str.split(" ").sort((a,b) => {
+//   return b.length - a.length;
+// })[0];
+
+// }
+
+// findLongestWord("The quick brown fox jumped over the lazy dog");
