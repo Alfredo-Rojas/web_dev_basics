@@ -126,39 +126,104 @@
 
 // 6) Largest Numbers in Arrays
 
-function largestOfFour(arr) {
-  let maxes = [];
-  for(let i=0;i<arr.length;i++) {
-    let tempMax = arr[i][0];
-    for(let j=0;j<arr[i].length;j++) {
-      let currentElement = arr[i][j];
-      if(currentElement >= tempMax) {
-        tempMax = currentElement;
-      }
-    }
-    maxes.push(tempMax);
-    // console.log(arr[i]);
-  }
-  return maxes;
-  }
+// function largestOfFour(arr) {
+//   let maxes = [];
+//   for(let i=0;i<arr.length;i++) {
+//     let tempMax = arr[i][0];
+//     for(let j=0;j<arr[i].length;j++) {
+//       let currentElement = arr[i][j];
+//       if(currentElement >= tempMax) {
+//         tempMax = currentElement;
+//       }
+//     }
+//     maxes.push(tempMax);
+//     // console.log(arr[i]);
+//   }
+//   return maxes;
+//   }
 
 
-  //Another way
-function findMax(arr) {
-  let max = arr[0];
-  for (i=0; i<arr.length; i++) {
-    if (arr[i] > max) max = arr[i];
-  }
-  return max;
-}
+//   //Another way
+// function findMax(arr) {
+//   let max = arr[0];
+//   for (i=0; i<arr.length; i++) {
+//     if (arr[i] > max) max = arr[i];
+//   }
+//   return max;
+// }
 
-function largestOfFour(arr) {
-let maxes = [];
-for(let i=0;i<arr.length;i++) {
-  let innerMax = findMax(arr[i]);
-  maxes.push(innerMax);
-}
-return maxes;
-}
+// function largestOfFour(arr) {
+// let maxes = [];
+// for(let i=0;i<arr.length;i++) {
+//   let innerMax = findMax(arr[i]);
+//   maxes.push(innerMax);
+// }
+// return maxes;
+// }
   
-  largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+//   largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+
+
+//---------------------------------------//
+
+// 7) Confirm the Ending
+
+
+//----------------------------------------//
+//Code war: The Feast of Many Beast
+
+// function feast(beast, dish) {
+//   let beastFirstLast = [];
+ 
+//   let dishFirstLast = [];
+ 
+
+//   let reg =/[\W_\0-9]/g;
+//   let smallBeast = beast.toLowerCase().replace(reg, "");
+//   let smallDish = dish.toLowerCase().replace(reg, "");
+  
+//   beastFirstLast.push(smallBeast[0], smallBeast[smallBeast.length-1]);
+
+//   dishFirstLast.push(smallDish[0], smallDish[smallDish.length-1]);
+//     console.log(beastFirstLast);
+//     console.log(dishFirstLast);
+//   if(beastFirstLast[0] === dishFirstLast[0] && beastFirstLast[1] === dishFirstLast[1]) {
+
+//   return true;
+//   } else {
+//     return false;
+//   }
+// } 
+
+//Another
+// function feast(beast, dish) {
+//   return beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
+// }
+
+//Another
+// function feast(beast, dish) {
+//   return beast[0]===dish[0] && beast.slice(-1)===dish.slice(-1);
+// }
+
+//Another
+// function feast(beast, dish) {
+//   return dish.startsWith(beast[0]) && dish.endsWith(beast[beast.length-1])
+// }
+
+//Another
+// function feast(beast, dish) {
+//   return beast.first() + beast.last() == dish.first() + dish.last();
+// }
+
+// String.prototype.first = function() {
+//   return this[0];
+// }
+
+// String.prototype.last = function() {
+//   return this[this.length-1];
+// }
+
+// feast("great blue heron", "garlic naan");
+// feast("chickadee", "chocolate cake");
+// feast("brown bear", "bear claw");
+// feast("brown beappppo03", "bear cla';po1");
