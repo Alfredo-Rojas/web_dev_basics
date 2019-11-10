@@ -227,3 +227,15 @@
 // feast("chickadee", "chocolate cake");
 // feast("brown bear", "bear claw");
 // feast("brown beappppo03", "bear cla';po1");
+
+
+//-------------------------------------------------------//
+//Reduce
+// let arrayNumb = [1,2,3,4,5,6,7];
+
+// let total = arrayNumb.reduce((acc, curr) => {
+// console.log(acc);
+// console.log(curr);
+//   return acc + curr;
+// });
+// console.log(total); 
