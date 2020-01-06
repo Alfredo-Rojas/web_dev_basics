@@ -271,9 +271,23 @@
 //----------------------------------------------------//
 //8) Repeat String Num Times
 
+// function repeatStringNumTimes(str, num) {
+//   if (num < 0) return "";
+//   return str.repeat(num);
+// }
+
+// repeatStringNumTimes("Alfre", 8);
+
+//8) Repeat String Num Times
+//Another way with a for loop
 function repeatStringNumTimes(str, num) {
+  let final = "";
   if (num < 0) return "";
-  return str.repeat(num);
+  
+  for (let i=0;i<num;i++) {
+    final += str;
+  }
+  return final;
 }
 
 repeatStringNumTimes("Alfre", 8);
