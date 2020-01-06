@@ -293,13 +293,22 @@
 
 //Another way using Recursion
 
-function repeatStringNumTimes(str, num) {
-  if (num < 0) return "";
-  if (num === 1) return str;
+// function repeatStringNumTimes(str, num) {
+//   if (num < 0) return "";
+//   if (num === 1) return str;
 
-  return str + repeatStringNumTimes(str, num - 1);
-}
+//   return str + repeatStringNumTimes(str, num - 1);
+// }
 
-repeatStringNumTimes("Alfre",-9);
+// repeatStringNumTimes("Alfre",-9);
 
 
+//9) Truncate a String
+
+function truncateString(str, num) {
+  if (num >= str.length) return str;
+  if (num <= 3) return str.slice(0, num) + "...";
+   return (str.slice(0, num - 3)) + "...";
+} 
+
+truncateString("A-tisket a-tasket A green and yellow basket", 11);
