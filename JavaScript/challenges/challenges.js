@@ -316,12 +316,22 @@
 
 //10) Chunky Monkey
 
+// function chunkyArrayInGroups(arr, size) {
+//   let groups = [];
+
+//   while (arr.length > 0) {
+//     groups.push(arr.slice(0, size));
+//     arr = arr.slice(size);
+//   }
+//   return groups;
+// }
+
+//Using Splice
 function chunkyArrayInGroups(arr, size) {
   let groups = [];
 
   while (arr.length > 0) {
-    groups.push(arr.slice(0, size));
-    arr = arr
+    groups.push(arr.splice(0, size));
   }
   return groups;
 }
