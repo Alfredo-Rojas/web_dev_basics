@@ -341,9 +341,24 @@
 
 //11) Slasher Flick
 
-function slasher(arr, howMany) {
+// function slasher(arr, howMany) {
 
-  return arr.splice(howMany);
+//   return arr.splice(howMany);
+// }
+
+// slasher([1, 2, 3], 2);
+
+
+//12) Mutation
+
+function mutation(arr) {
+  let firstWord = arr[0].toLowerCase();
+  let secondWord = arr[1].toLowerCase();
+
+  for (let i=0;i<secondWord.length;i++) {
+    if (firstWord.indexOf(secondWord[i]) === -1) return false;
+  }
+  return true;
 }
 
-slasher([1, 2, 3], 2);
+mutation(["Hello", "hey"]);
