@@ -124,7 +124,7 @@
 //-------------------------------------//
 
 
-// 6) Largest Numbers in Arrays
+// 6) Largest Numbers in two dimmensional in Arrays
 
 // function largestOfFour(arr) {
 //   let maxes = [];
@@ -141,6 +141,21 @@
 //   }
 //   return maxes;
 //   }
+
+//Another way
+// function largestOfFour(arr) {
+//   let maxes = [0,0,0,0];
+
+//   for (let i=0;i<arr.length;i++) {
+//     for (let j=0;j<arr.length;j++) {
+//       let currentElement = arr[i][j];
+//       if (currentElement >= maxes[i]) {
+//         maxes[i] = currentElement;
+//       }
+//     }
+//   }
+//   return maxes;
+// }
 
 
 //   //Another way
@@ -160,7 +175,7 @@
 // }
 // return maxes;
 // }
-  
+
 //   largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
 
@@ -239,3 +254,26 @@
 //   return acc + curr;
 // });
 // console.log(total); 
+
+// Using reduce to sort
+// let anyArraay = [1,50,2,3,20,5,6,7,8];
+
+// let total = anyArraay.reduce((a, c) => {
+//   if (a > c) {
+//     a = c;
+//     return a;
+//   }
+//   return a;
+// });
+
+// console.log(total);
+
+//----------------------------------------------------//
+//8) Repeat String Num Times
+
+function repeatStringNumTimes(str, num) {
+  if (num < 0) return "";
+  return str.repeat(num);
+}
+
+repeatStringNumTimes("Alfre", 8);
