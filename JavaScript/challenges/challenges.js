@@ -327,13 +327,23 @@
 // }
 
 //Using Splice
-function chunkyArrayInGroups(arr, size) {
-  let groups = [];
+// function chunkyArrayInGroups(arr, size) {
+//   let groups = [];
 
-  while (arr.length > 0) {
-    groups.push(arr.splice(0, size));
-  }
-  return groups;
+//   while (arr.length > 0) {
+//     groups.push(arr.splice(0, size));
+//   }
+//   return groups;
+// }
+
+// chunkyArrayInGroups(["a", "b", "c", "d"], 2);
+
+
+//11) Slasher Flick
+
+function slasher(arr, howMany) {
+
+  return arr.splice(howMany);
 }
 
-chunkyArrayInGroups(["a", "b", "c", "d"], 2);
+slasher([1, 2, 3], 2);
