@@ -280,14 +280,26 @@
 
 //8) Repeat String Num Times
 //Another way with a for loop
-function repeatStringNumTimes(str, num) {
-  let final = "";
-  if (num < 0) return "";
+// function repeatStringNumTimes(str, num) {
+//   let final = "";
+//   if (num < 0) return "";
   
-  for (let i=0;i<num;i++) {
-    final += str;
-  }
-  return final;
+//   for (let i=0;i<num;i++) {
+//     final += str;
+//   }
+//   return final;
+// }
+// repeatStringNumTimes("Alfre", 8);
+
+//Another way using Recursion
+
+function repeatStringNumTimes(str, num) {
+  if (num < 0) return "";
+  if (num === 1) return str;
+
+  return str + repeatStringNumTimes(str, num - 1);
 }
 
-repeatStringNumTimes("Alfre", 8);
+repeatStringNumTimes("Alfre",-9);
+
+
