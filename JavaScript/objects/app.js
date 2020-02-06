@@ -70,9 +70,31 @@ class Person {
 
 }
 
+const personOne = new Person("Alfre", 22, "Male");
+const personeTwo = new Person("Mary", 27, "Female");
+
 console.log(Person);
+console.log(personOne);
+console.log(personOne.speak());
+console.log(personeTwo);
 
+class Athlete extends Person {
+  constructor(name, age, gender, sport, club) {
+    super(name, age, gender);
+    this.sport = sport;
+    this.club = club;
+  }
+  play() {
+    return `The athlete ${this.name} practice ${this.sport} for ${this.club}`;
+  }
+}
 
+const athleteOne = new Athlete("Leo", 30, "Male", "Soccer", "Barcelona");
+const athleteTwo = new Athlete("Kobe", 41, "Male", "Basketball", "Lakers");
+
+console.log(athleteOne.play());
+console.log(athleteTwo);
+console.log(athleteTwo.play());
 
 
 
