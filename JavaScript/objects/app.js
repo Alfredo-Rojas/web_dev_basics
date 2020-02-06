@@ -58,43 +58,67 @@
 
 //Classes JS Practices
 
+// class Person {
+//   constructor(name, age, gender) {
+//     this.name = name;
+//     this.age = age;
+//     this.gender = gender;
+//   }
+//   speak() {
+//     return `Hello everyone!`;
+//   }
+
+// }
+
+// const personOne = new Person("Alfre", 22, "Male");
+// const personeTwo = new Person("Mary", 27, "Female");
+
+// console.log(Person);
+// console.log(personOne);
+// console.log(personOne.speak());
+// console.log(personeTwo);
+
+// class Athlete extends Person {
+//   constructor(name, age, gender, sport, club) {
+//     super(name, age, gender);
+//     this.sport = sport;
+//     this.club = club;
+//   }
+//   play() {
+//     return `The athlete ${this.name} practice ${this.sport} for ${this.club}`;
+//   }
+// }
+
+// const athleteOne = new Athlete("Leo", 30, "Male", "Soccer", "Barcelona");
+// const athleteTwo = new Athlete("Kobe", 41, "Male", "Basketball", "Lakers");
+
+// console.log(athleteOne.play());
+// console.log(athleteTwo);
+// console.log(athleteTwo.play());
+
+
+//BMI
+
 class Person {
-  constructor(name, age, gender) {
+  constructor(name, weight, height) {
     this.name = name;
-    this.age = age;
-    this.gender = gender;
+    this.weight = weight;
+    this.height = height
   }
-  speak() {
-    return `Hello everyone!`;
-  }
-
-}
-
-const personOne = new Person("Alfre", 22, "Male");
-const personeTwo = new Person("Mary", 27, "Female");
-
-console.log(Person);
-console.log(personOne);
-console.log(personOne.speak());
-console.log(personeTwo);
-
-class Athlete extends Person {
-  constructor(name, age, gender, sport, club) {
-    super(name, age, gender);
-    this.sport = sport;
-    this.club = club;
-  }
-  play() {
-    return `The athlete ${this.name} practice ${this.sport} for ${this.club}`;
+  bmi() {
+    return this.weight / this.height^2;
   }
 }
 
-const athleteOne = new Athlete("Leo", 30, "Male", "Soccer", "Barcelona");
-const athleteTwo = new Athlete("Kobe", 41, "Male", "Basketball", "Lakers");
+const personOne = new Person("John", 100, 5);
+const personTwo = new Person("Mark", 150, 6);
 
-console.log(athleteOne.play());
-console.log(athleteTwo);
-console.log(athleteTwo.play());
+console.log(personOne.bmi());
+console.log(personTwo.bmi());
+
+let higherBMI = personTwo.bmi() > personOne.bmi();
+
+console.log(`Is Mark's BMI higher than John's? ${higherBMI}`);
 
 
 
