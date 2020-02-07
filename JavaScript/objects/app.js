@@ -106,12 +106,12 @@ class Person {
     this.height = height
   }
   bmi() {
-    return this.weight / this.height^2;
+    return this.weight / this.height * this.height;
   }
 }
 
-const personOne = new Person("John", 100, 5);
-const personTwo = new Person("Mark", 150, 6);
+const personOne = new Person("John", 100, 1.75);
+const personTwo = new Person("Mark", 220, 1.86);
 
 console.log(personOne.bmi());
 console.log(personTwo.bmi());
@@ -120,5 +120,9 @@ let higherBMI = personTwo.bmi() > personOne.bmi();
 
 console.log(`Is Mark's BMI higher than John's? ${higherBMI}`);
 
+//Ternary operator
+(personOne.bmi() > personTwo.bmi()) ? 
+console.log('John\'s BMI is higher than Mark\'s!') : 
+console.log('Mark\'s BMI is higher than John\'s!');
 
 
