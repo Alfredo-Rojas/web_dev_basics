@@ -145,4 +145,24 @@
 
 // console.log('John\'s BMI is higher than Mark\'s!');
 
+//Prototype
 
+// let person = function() {};
+
+// person.prototype.name = 'n/a';
+// person.prototype.age = 0;
+
+// console.log(person);
+
+// let Alfred = new person();
+
+// console.log(Alfred.name);
+// console.log(Alfred.age);
+
+// person.prototype.hello = function() {
+//   console.log(`Hello ${this.name}`);
+// }
+
+// Alfred.hello();
+
+ 
