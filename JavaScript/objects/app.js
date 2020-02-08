@@ -99,30 +99,50 @@
 
 //BMI
 
-class Person {
-  constructor(name, weight, height) {
-    this.name = name;
-    this.weight = weight;
-    this.height = height
-  }
-  bmi() {
-    return this.weight / this.height * this.height;
-  }
-}
+// class Person {
+//   constructor(name, weight, height) {
+//     this.name = name;
+//     this.weight = weight;
+//     this.height = height
+//   }
+//   bmi() {
+//     return this.weight / (this.height * this.height);
+//   }
+// }
 
-const personOne = new Person("John", 100, 1.75);
-const personTwo = new Person("Mark", 220, 1.86);
+// const personTwo = new Person("Mark", 220, 1.86);
+// const personOne = new Person("John", 220, 1.75);
 
-console.log(personOne.bmi());
-console.log(personTwo.bmi());
+// let bmiMark = personTwo.bmi();
+// let bmiJohn = personOne.bmi();
 
-let higherBMI = personTwo.bmi() > personOne.bmi();
+// console.log(personOne.bmi());
+// console.log(personTwo.bmi());
 
-console.log(`Is Mark's BMI higher than John's? ${higherBMI}`);
+// let higherBMI = personTwo.bmi() > personOne.bmi();
+
+// console.log(`Is Mark's BMI higher than John's? ${higherBMI}`);
 
 //Ternary operator
-(personOne.bmi() > personTwo.bmi()) ? 
-console.log('John\'s BMI is higher than Mark\'s!') : 
-console.log('Mark\'s BMI is higher than John\'s!');
+// (personOne.bmi() > personTwo.bmi()) ? 
+// console.log('John\'s BMI is higher than Mark\'s!') : 
+// console.log('Mark\'s BMI is higher than John\'s!');
+
+//Switch
+// switch (personOne.bmi() === personTwo.bmi()) {
+
+//   case (personOne.bmi() < personTwo.bmi()):
+//     console.log('Mark\'s BMI is higher than John\'s!');
+//     break;
+
+//   case (personTwo.bmi() < personOne.bmi()):
+//     console.log('John\'s BMI is higher than Mark\'s!');
+//     break;
+
+//   default:
+//     console.log('What a coincidence they have the same BMI');
+// }
+
+// console.log('John\'s BMI is higher than Mark\'s!');
 
 
