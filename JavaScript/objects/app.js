@@ -201,3 +201,15 @@
 // }
 
 // myFunc.call(myObj, 4, 3); //9
+
+//Apply ///////////Almost same that call
+
+// let myObj = {
+//   num: 10
+// }
+
+// let myFunc = function(num1, num2) {
+//   console.log(this.num + num1 + num2);
+// }
+
+// myFunc.apply(myObj, [5, 7]); //22
