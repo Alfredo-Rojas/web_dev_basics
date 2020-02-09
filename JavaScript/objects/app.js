@@ -213,3 +213,28 @@
 // }
 
 // myFunc.apply(myObj, [5, 7]); //22
+
+// Bind //////////////
+
+// let myObj = {
+//   num1: 5,
+//   num2: 6
+// }
+
+// let myFunc = function() {
+//   console.log(this.num1 + this.num2);
+// }
+
+// myFunc(); //NaN
+
+// let addedFunc = myFunc.bind(myObj);
+// addedFunc(); //11
+
+// let myObj2 = {
+//   num1: 10,
+//   num2: 20
+// }
+
+// var anotherFunc = myFunc.bind(myObj2);
+// anotherFunc(); //30
+
