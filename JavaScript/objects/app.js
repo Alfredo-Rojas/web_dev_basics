@@ -238,3 +238,18 @@
 // var anotherFunc = myFunc.bind(myObj2);
 // anotherFunc(); //30
 
+
+// Closures //////////////////
+// let add = function(num1) {
+//   return function(num2) {
+//     return num1 + num2;
+//   }
+// }
+
+// let add2 = add(10);
+// console.log(add2(20)); //30
+
+// let add50 = add(20);
+// console.log(add50(30)); //50
+
+
