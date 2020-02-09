@@ -253,3 +253,26 @@
 // console.log(add50(30)); //50
 
 
+// Promises /////////////// Its asyncronous code
+
+// let myPromise = new Promise(function(resolved, rejected) {
+//   if(true) {
+//     resolved(200);
+//   } else {
+//     rejected();
+//   }
+// });
+
+// myPromise.then(function() {
+//   console.log(my);
+// }).catch(function() {
+
+// });
+
+// myPromise.then(function(value) {
+//   console.log(value);
+// }).catch(function() {
+//   console.log('Your promise fails');
+// });
+
+  
