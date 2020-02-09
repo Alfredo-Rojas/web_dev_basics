@@ -274,5 +274,17 @@
 // }).catch(function() {
 //   console.log('Your promise fails');
 // });
+//Output: 200
 
+
+//Callbacks ///////////////
+// function calc(num, callback) {
+//   return callback(num);
+// }
+
+// let add10 = function(num) {
+//   console.log(num + 10);
+// }
+
+// calc(9, add10); //19
   
