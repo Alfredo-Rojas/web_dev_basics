@@ -163,6 +163,41 @@
 //   console.log(`Hello ${this.name}`);
 // }
 
+// Alfred.name = 'Alfred';
 // Alfred.hello();
 
- 
+
+// Call /////////////
+
+// let myObj = {
+//   name: 'Alfre'
+// }
+
+// let sayHello = function() {
+//   console.log('Hello ' + this.name);
+// }
+
+// sayHello(); //Hello
+// sayHello.call(myObj); //Hello Alfre
+
+////////////////////
+
+// let myObj = {
+//   num: 2
+// }
+
+// let myFunc = function(add) {
+//   console.log(this.num + add);
+// }
+
+// myFunc(); //NaN
+// myFunc(2); //NaN
+
+// myFunc.call(myObj, 6); //8
+// myFunc.call(myObj); //NaN
+
+// myFunc = function(num1, num2) {
+//   console.log(this.num + num1 + num2);
+// }
+
+// myFunc.call(myObj, 4, 3); //9
