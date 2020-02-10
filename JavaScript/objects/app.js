@@ -287,4 +287,16 @@
 // }
 
 // calc(9, add10); //19
+
+
+//XMLHttpRequest /////////////
+// var request = new XMLHttpRequest();
+
+// request.onreadystatechange = function() {
+//   console.table(request.response);
+// }
+
+// request.open('get', 'https://randomuser.me/api/', true);
+
+// request.send();
   
