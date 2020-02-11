@@ -42,3 +42,19 @@ const products = [
 // });
 
 // console.log(tvTable);
+
+//Map ///////////////
+
+//!!!!This way map will change price value in both arrays
+// const productsTax = products.map(item => {
+//   item.price = item.price + item.price * 0.07;
+//   return item;
+// });
+
+//!!!!This way you create a new intace of the array in order to keep the original array inmutable
+// const productsTax = products.map(item => {
+//   let newPrice = (item.price + item.price * 0.07).toFixed(2);
+//   return { ...item, price: newPrice };
+// })
+// console.log(productsTax);
+// console.log(products);
