@@ -300,3 +300,20 @@
 
 // request.send();
   
+//Promises with XMLHttpRequest ////////
+
+// let myPromise = new Promise(function(res, rej) {
+
+//   let request = new XMLHttpRequest();
+//   request.open('get', 'https://randomuser.me/api/');
+//   request.onload = res;
+//   request.onerror = rej;
+//   request.send();
+// });
+
+//   myPromise.then(function(data) {
+//     data = data.target.response;
+//     console.log(data);
+//   }).catch(function() {
+//     console.log('there was an error!');
+//   });
