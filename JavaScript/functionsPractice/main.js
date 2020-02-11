@@ -58,3 +58,26 @@ const products = [
 // })
 // console.log(productsTax);
 // console.log(products);
+
+//!!Changing an Object's property name
+// const products2 = products.map(item => {
+//   return {itemName: item.name, price: item.price, category: item.category};
+// })
+  
+  // console.log(products2);
+
+//Filter ////////////////
+
+// const productsHome = products.filter(item => {
+//   return item.category === 'Home';
+// });
+// console.log(products);
+// console.log(productsHome);
+
+
+// const products2 = products.map(item => {
+//   return {itemName: item.name, price: item.price, category: item.category};
+// })
+
+// console.log(products2);
+
