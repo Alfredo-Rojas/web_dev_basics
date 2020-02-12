@@ -83,3 +83,11 @@ const products = [
 
 // console.log(check);
 
+
+//Some //////////////
+
+// const anyOne = products.some(item => {
+//   return item.price >= 500;
+// });
+
+// console.log(anyOne);
