@@ -75,9 +75,11 @@ const products = [
 // console.log(productsHome);
 
 
-// const products2 = products.map(item => {
-//   return {itemName: item.name, price: item.price, category: item.category};
-// })
+//Every //////////
 
-// console.log(products2);
+// const check = products.every(item => {
+//   return item.price >= 10;
+// });
+
+// console.log(check);
 
