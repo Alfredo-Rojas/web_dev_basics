@@ -91,3 +91,20 @@ const products = [
 // });
 
 // console.log(anyOne);
+
+
+//Reduce /////////////
+
+//  const totalPrice = products.reduce((total, item) => {
+//    return total + item.price;
+//  }, 0);
+
+//  console.log(totalPrice);
+
+//  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+//  const sum = arr.reduce((total, item) => {
+//    return total + item;
+//  }, 55);
+
+//  console.log(sum);
