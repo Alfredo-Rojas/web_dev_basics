@@ -20,7 +20,12 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // ages.pop();
 // console.log(ages);
 
+//indexOf
 
+// let isInTheArray = ages.indexOf(21) == -1 ? `the number in not in the array`
+// : `the number is in the array`;
+
+// console.log(isInTheArray);
 
 // for(let i=0; i<companies.length; i++) {
 //   console.log(companies[i]);
