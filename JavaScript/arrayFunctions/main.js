@@ -12,6 +12,15 @@ const companies = [
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
+//push, unshift, shift, pop
+
+// ages.push(101);
+// ages.unshift(102);
+// ages.shift();
+// ages.pop();
+// console.log(ages);
+
+
 
 // for(let i=0; i<companies.length; i++) {
 //   console.log(companies[i]);
@@ -59,13 +68,13 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 // Get companies started at 80s
 // ES5
-const companiesStartedAtEighties = companies.filter(function(company) {
-  if(company.start < 1990 && company.start >= 1980) {
-    return true;
-  }
-});
+// const companiesStartedAtEighties = companies.filter(function(company) {
+//   if(company.start < 1990 && company.start >= 1980) {
+//     return true;
+//   }
+// });
 
-console.log(companiesStartedAtEighties);
+// console.log(companiesStartedAtEighties);
 
 
 

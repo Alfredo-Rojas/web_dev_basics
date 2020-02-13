@@ -25,13 +25,13 @@
 
 //Practicing with find, filter, reduce...
 
-const products = [
-  {name: 'PC', price: 699, category: 'Technology'},
-  {name: 'Cooker', price: 39, category: 'Home'},
-  {name: 'Calculator', price: 75, category: 'Technology'},
-  {name: 'TV Table', price: 120, category: 'Home'},
-  {name: 'Soccer Ball', price: 10, category: 'Sports & Fitness'}
-];
+// const products = [
+//   {name: 'PC', price: 699, category: 'Technology'},
+//   {name: 'Cooker', price: 39, category: 'Home'},
+//   {name: 'Calculator', price: 75, category: 'Technology'},
+//   {name: 'TV Table', price: 120, category: 'Home'},
+//   {name: 'Soccer Ball', price: 10, category: 'Sports & Fitness'}
+// ];
 // console.table(products);
 
 //Find /////////////
