@@ -20,6 +20,7 @@
 
 // console.log(MovieTwo.player());
 
+
 //Classes
 
 // class Movie {
@@ -97,7 +98,7 @@
 // console.log(athleteTwo.play());
 
 
-//BMI
+//BMI using classes //////////
 
 // class Person {
 //   constructor(name, weight, height) {
@@ -105,19 +106,29 @@
 //     this.weight = weight;
 //     this.height = height
 //   }
-//   bmi() {
-//     return this.weight / (this.height * this.height);
+//   bmiCalc() {
+//     this.bmi = this.weight / (this.height * this.height);
 //   }
 // }
 
-// const personTwo = new Person("Mark", 220, 1.86);
+// const personTwo = new Person("Mark", 220, 1.75);
 // const personOne = new Person("John", 220, 1.75);
 
-// let bmiMark = personTwo.bmi();
-// let bmiJohn = personOne.bmi();
+// personOne.bmiCalc();
+// personTwo.bmiCalc();
+// console.log(personOne);
+// console.log(personTwo);
 
-// console.log(personOne.bmi());
-// console.log(personTwo.bmi());
+// if (personOne.bmi === personTwo.bmi) {
+//   console.log(`What a coincidence they have the same BMI(${personTwo.bmi})`);
+// } else if (personOne.bmi < personTwo.bmi) {
+//   console.log(`Mark\'s BMI(${personTwo.bmi}) is higher than John\'s BMI(${personOne.bmi})!`);
+// } else {
+//   console.log(`John\'s BMI(${personOne.bmi}) is higher than Mark\'s BMI(${personTwo.bmi})!`);
+// }
+
+/////////////////
+
 
 // let higherBMI = personTwo.bmi() > personOne.bmi();
 
@@ -141,6 +152,17 @@
 
 //   default:
 //     console.log('What a coincidence they have the same BMI');
+// }
+
+
+
+// if (personOne.bmi === personTwo.bmi) {
+//   console.log(`What a coincidence they have the same BMI(${personTwo.bmi})`);
+//    else if (personOne.bmi < personTwo.bmi) {
+//     console.log(`Mark\'s BMI(${personTwo.bmi}) is higher than John\'s BMI(${personOne.bmi})!`);
+//   } else (personTwo.bmi < personOne.bmi) {
+//     console.log(`John\'s BMI(${personTwo.bmi}) is higher than Mark\'s BMI(${personTwo.bmi})!`);
+//   } 
 // }
 
 // console.log('John\'s BMI is higher than Mark\'s!');

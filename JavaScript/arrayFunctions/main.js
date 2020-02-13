@@ -87,3 +87,16 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //map
 //sort
 //reduce
+
+
+
+const john = {
+  fistname: 'John',
+  lastname: 'Smith',
+  calcAge() {
+    this.age = 2020 - this.birthyear;
+  }, 
+  birthyear: 1984
+}
+john.calcAge();
+console.log(john);
