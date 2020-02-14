@@ -108,18 +108,17 @@
 //   }
 //   bmiCalc() {
 //     this.bmi = this.weight / (this.height * this.height);
+//     return this.bmi;
 //   }
 // }
 
 // const personTwo = new Person("Mark", 220, 1.75);
 // const personOne = new Person("John", 220, 1.75);
 
-// personOne.bmiCalc();
-// personTwo.bmiCalc();
 // console.log(personOne);
 // console.log(personTwo);
 
-// if (personOne.bmi === personTwo.bmi) {
+// if (personOne.bmiCalc() === personTwo.bmiCalc()) {
 //   console.log(`What a coincidence they have the same BMI(${personTwo.bmi})`);
 // } else if (personOne.bmi < personTwo.bmi) {
 //   console.log(`Mark\'s BMI(${personTwo.bmi}) is higher than John\'s BMI(${personOne.bmi})!`);
